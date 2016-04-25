@@ -1,3 +1,5 @@
+windowWidth = $( window ).width();
+
 function makeWaves(width) {
 	var ocean = document.getElementById("ocean"),
 	waveWidth = width,
