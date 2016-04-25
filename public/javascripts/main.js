@@ -20,7 +20,7 @@ function makeWaves(width) {
 windowWidth = $( window ).width();
 
 if (windowWidth < 400) {
-	makeWaves(1);
+	makeWaves(5);
 } else {
 	makeWaves(10);
 }
@@ -33,7 +33,7 @@ $( window ).resize(function(e) {
 		windowWidth = $( window ).width();
 		$(".wave").remove();
 		if (windowWidth < 400) {
-			makeWaves(1);
+			makeWaves(5);
 		} else {
 			makeWaves(10);
 		}

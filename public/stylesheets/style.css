@@ -1,3 +1,6 @@
+html {
+  overflow: hidden;
+}
 body {
   font-family: Helvatica, Tahoma, Arial, 'cwTeXHei', "Microsoft JhengHei", "Microsoft YaHei", "微软雅黑", sans-serif;
   letter-spacing: 0.2em;
@@ -69,7 +72,7 @@ p.sub {
   padding-top: 12em;
 }
 #exhibition-name h1 {
-  font-family: BiauKai, KaiTi, Helvatica, Tahoma, Arial, 'cwTeXHei', "Microsoft JhengHei", "Microsoft YaHei", "微软雅黑", sans-serif;
+  font-family: BiauKai, KaiTi, STKaiti, Helvatica, Tahoma, Arial, 'cwTeXHei', "Microsoft JhengHei", "Microsoft YaHei", "微软雅黑", sans-serif;
 }
 #exhibition-name h1 span {
   letter-spacing: 0;
