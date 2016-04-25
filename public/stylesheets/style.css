@@ -39,7 +39,7 @@ p.sub {
   border-bottom: transparent;
 }
 .navbar-default {
-  background: #fff;
+  background: rgba(255,255,255,0.8);
   border: none;
   box-shadow: none;
   z-index: 999;
