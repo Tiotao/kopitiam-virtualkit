@@ -1,44 +1,40 @@
-// make some waves.
-function makeWaves(width) {
-	var ocean = document.getElementById("ocean"),
-	waveWidth = width,
-	waveCount = Math.floor(window.innerWidth/waveWidth),
-	docFrag = document.createDocumentFragment();
-
-	for(var i = 0; i < waveCount; i++){
-		var wave = document.createElement("div");
-		wave.className += " wave";
-		docFrag.appendChild(wave);
-		wave.style.left = i * waveWidth + "px";
-		wave.style.webkitAnimationDelay = (i/100) + "s";
-		wave.style.width = waveWidth + "px";
-	}
-
-	ocean.appendChild(docFrag);
-}
 
 windowWidth = $( window ).width();
 
-if (windowWidth < 400) {
-	makeWaves(5);
-} else {
-	makeWaves(10);
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+
+// make some waves.
+
+
+function makeFlowCharacters(size) {
+	var flow = document.getElementById("flow");
+	var initialPosition = [getRandomInt(10, 90) ,0];
+	var backgroundRow = getRandomInt(0, 2);
+	var backgroundCol = getRandomInt(0, 2);
+	var backgroundPos = backgroundRow * size + "px " + backgroundCol * size + "px"
+	var character = document.createElement("div");
+	var docFrag = document.createDocumentFragment();
+	character.className += " char-" + size;
+	console.log(initialPosition)
+	character.style.left = initialPosition[0] + "%"
+	character.style.bottom = initialPosition[1] + "px"
+	character.style.backgroundPosition = backgroundPos;
+	docFrag.appendChild(character);
+	flow.appendChild(docFrag);
+	window.setTimeout(function(){
+		character.remove();
+	}, 40000)
 }
 
 
+window.setInterval(function(){
+	makeFlowCharacters(40)
 
-$( window ).resize(function(e) {
-	console.log(e)
-	if (windowWidth !== $( window ).width()) {
-		windowWidth = $( window ).width();
-		$(".wave").remove();
-		if (windowWidth < 400) {
-			makeWaves(5);
-		} else {
-			makeWaves(10);
-		}
-		
-	}
-	
-});
+}, 2000);
+
+window.setInterval(function(){
+	makeFlowCharacters(80)
+}, 5000)
 

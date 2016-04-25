@@ -38,7 +38,8 @@ p.sub
 	padding: 0
 	margin-top: 0
 	position: relative
-
+	border-bottom: transparent
+	
 .navbar-default 
 	// position: fixed
 	background: white
@@ -138,12 +139,12 @@ h4.section-header
 
 
 #ocean
-	position:absolute;
-	width:100%;
-	position: absolute;
-	height: 40em;
 	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #FFFFFF), color-stop(0.5, #f3f3f3))
 
+.animation-header
+	position:absolute;
+	width:100%;
+	height: 40em;
 
 .wave
 	background: white;
@@ -168,3 +169,55 @@ h4.section-header
 	100%{ 
 		height:60%;
 	}
+
+@-webkit-keyframes flow-40
+	0% {
+		bottom:20%;
+		opacity: 0
+	}
+	20% {
+		opacity: 0.2
+	}
+	80% {
+		opacity: 0.2
+	}
+	100%{ 
+		bottom:100%;
+		opacity: 0
+	}
+
+@-webkit-keyframes flow-60
+	0% {
+		bottom:20%;
+		opacity: 0
+	}
+	20% {
+		opacity: 0.4
+	}
+	80% {
+		opacity: 0.4
+	}
+	100%{ 
+		bottom:100%;
+		opacity: 0
+	}
+
+
+.char-40
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	-webkit-animation-name: flow-40; 
+	-webkit-animation-duration: 40s; 
+	-webkit-animation-iteration-count: infinite;
+	background-image: url('../images/kanji-01.png');
+	
+
+.char-80
+	height: 80px;
+	width: 80px;
+	position: absolute;
+	-webkit-animation-name: flow-60; 
+	-webkit-animation-duration: 40s; 
+	-webkit-animation-iteration-count: infinite;
+	background-image: url('../images/kanji-02.png');
