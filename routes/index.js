@@ -19,4 +19,9 @@ router.get('/comment', function(req, res, next) {
 	res.render('comment', { title: '访客互动' });
 });
 
+router.get('/float', function(req, res, next) {
+	res.render('float', { title: '浮动的汉字' });
+});
+
+
 module.exports = router;

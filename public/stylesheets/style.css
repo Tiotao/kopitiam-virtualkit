@@ -67,32 +67,45 @@ p.sub {
 .navbar-nav>li>a {
   text-shadow: none;
 }
-#exhibition-name {
+#exhibition-name,
+#kanji-name {
   background: transparent;
   padding-bottom: 0em;
   padding-top: 12em;
 }
-#exhibition-name h1 {
+#exhibition-name h1,
+#kanji-name h1 {
   font-family: BiauKai, KaiTi, STKaiti, Helvatica, Tahoma, Arial, 'cwTeXHei', "Microsoft JhengHei", "Microsoft YaHei", "微软雅黑", sans-serif;
 }
-#exhibition-name h1 span {
+#exhibition-name h1 span,
+#kanji-name h1 span {
   letter-spacing: 0;
 }
-#exhibition-name p {
+#exhibition-name p,
+#kanji-name p {
   font-family: Roboto Light, Helvatica, Tahoma, Arial, 'cwTeXHei', "Microsoft JhengHei", "Microsoft YaHei", "微软雅黑", sans-serif;
 }
-#exhibition-name p span {
+#exhibition-name p span,
+#kanji-name p span {
   letter-spacing: 0;
 }
 @media (min-width: 992px) {
-  #exhibition-name h1 {
+  #exhibition-name h1,
+  #kanji-name h1 {
     font-size: 5em;
     letter-spacing: 1.2em;
   }
-  #exhibition-name p {
+  #exhibition-name p,
+  #kanji-name p {
     font-size: 1.5em;
     letter-spacing: 1.2em;
   }
+}
+#kanji-name {
+  padding-top: 40vh;
+}
+.page-header.floating-kanji {
+  height: 100%;
 }
 h4.section-header {
   font-size: 1.8em;
@@ -150,6 +163,9 @@ h4.section-header {
   position: absolute;
   width: 100%;
   height: 40em;
+}
+.animation-header.floating-kanji {
+  height: 100%;
 }
 .wave {
   background: #fff;
@@ -326,5 +342,32 @@ h4.section-header {
 
   91%, 100% {
     opacity: 0;
+  }
+}
+.cir {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: rgba(210,210,210,0.3);
+  position: absolute;
+  -webkit-animation-name: expand;
+  -webkit-animation-duration: 16s;
+  -webkit-animation-iteration-count: infinite;
+}
+@-webkit-keyframes expand {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.1, 0.1);
+    transform: scale(0.1, 0.1);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(10, 10);
+    transform: scale(10, 10);
   }
 }

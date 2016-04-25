@@ -11,8 +11,8 @@ function getRandomInt(min, max) {
 function makeFlowCharacters(size) {
 	var flow = document.getElementById("flow");
 	var initialPosition = [getRandomInt(10, 90) ,0];
-	var backgroundRow = getRandomInt(0, 2);
-	var backgroundCol = getRandomInt(0, 2);
+	var backgroundRow = getRandomInt(0, 3);
+	var backgroundCol = getRandomInt(0, 3);
 	var backgroundPos = backgroundRow * size + "px " + backgroundCol * size + "px"
 	var character = document.createElement("div");
 	var docFrag = document.createDocumentFragment();
@@ -32,9 +32,9 @@ function makeFlowCharacters(size) {
 window.setInterval(function(){
 	makeFlowCharacters(40)
 
-}, 2000);
+}, 1500);
 
 window.setInterval(function(){
 	makeFlowCharacters(80)
-}, 5000)
+}, 3000)
 
