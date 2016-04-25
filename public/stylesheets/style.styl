@@ -221,3 +221,107 @@ h4.section-header
 	-webkit-animation-duration: 40s; 
 	-webkit-animation-iteration-count: infinite;
 	background-image: url('../images/kanji-02.png');
+	
+
+#countdown
+	font-weight: 100;
+	text-align: center;
+	font-size: 2em
+	margin: auto
+
+
+#countdown > div
+	padding: 0.5em
+	display: inline-block;
+
+
+#countdown div > span
+	padding: 15px;
+	display: inline-block;
+
+
+.smalltext
+	padding-top: 0.2em;
+	font-size: 0.5em
+
+.behindTheDoor
+	height: 40px
+	width: 30px
+	// background: -webkit-linear-gradient(#eee, #f9f9f9)
+	background: #ddd
+	position: absolute
+	top: 0
+	left: 0
+	-webkit-animation-name: behind-door; 
+	-webkit-animation-duration: 10s; 
+	-webkit-animation-iteration-count: infinite;
+	
+.doorContainer
+	position: absolute
+	height: 40px
+	width: 30px
+	-webkit-perspective: 500px;
+	perspective:500px;
+
+.openingDoor
+	height: 40px
+	width: 30px
+	background: #f9f9f9
+	// border: 1px solid #ccc
+	// border-left: 1px solid white;
+	position: absolute
+	top: 0
+	left: 0
+	-webkit-animation-name: opening-door; 
+	-webkit-animation-duration: 10s; 
+	-webkit-animation-iteration-count: infinite;
+
+@-webkit-keyframes opening-door
+	0% {
+		opacity: 0
+	}
+	
+	10%, 15% {
+		transform-origin: left center
+		-webkit-transform-origin: left center
+		-webkit-transform: rotateY(0deg)
+		transform: rotateY(0deg)
+		opacity: 1
+	}
+	
+	30%, 70% {
+		transform-origin: left center
+		-webkit-transform-origin: left center
+		-webkit-transform: rotateY(-120deg) /* Safari */
+		transform: rotateY(-120deg)
+	}
+	
+	90% {
+		transform-origin: left center
+		-webkit-transform-origin: left center
+		-webkit-transform: rotateY(0deg) /* Safari */
+		transform: rotateY(0deg)
+		opacity: 1
+	}
+
+	100%{ 
+		opacity: 0;
+	}
+	
+@-webkit-keyframes behind-door
+	0%, 10% {
+		opacity: 0
+	}
+	
+	11% {
+		opacity: 1
+	}
+	
+	90% {
+		opacity: 1
+	}
+
+	91%, 100%{ 
+		opacity: 0
+	}
+
