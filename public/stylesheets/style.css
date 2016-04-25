@@ -151,7 +151,6 @@ h4.section-header {
   background: #fff;
   display: inline-block;
   height: 60%;
-  width: 10px;
   position: absolute;
   -webkit-animation-name: dostuff;
   -webkit-animation-duration: 3s;

@@ -1,7 +1,7 @@
 // make some waves.
-function makeWaves() {
+function makeWaves(width) {
 	var ocean = document.getElementById("ocean"),
-	waveWidth = 10,
+	waveWidth = width,
 	waveCount = Math.floor(window.innerWidth/waveWidth),
 	docFrag = document.createDocumentFragment();
 
@@ -11,15 +11,34 @@ function makeWaves() {
 		docFrag.appendChild(wave);
 		wave.style.left = i * waveWidth + "px";
 		wave.style.webkitAnimationDelay = (i/100) + "s";
+		wave.style.width = waveWidth + "px";
 	}
 
 	ocean.appendChild(docFrag);
 }
 
-makeWaves();
+windowWidth = $( window ).width();
 
-$( window ).resize(function() {
-	$(".wave").remove();
-	makeWaves();
+if (windowWidth < 400) {
+	makeWaves(5);
+} else {
+	makeWaves(10);
+}
+
+
+
+$( window ).resize(function(e) {
+	console.log(e)
+	if (windowWidth !== $( window ).width()) {
+		windowWidth = $( window ).width();
+		$(".wave").remove();
+		if (windowWidth < 400) {
+			makeWaves(5);
+		} else {
+			makeWaves(10);
+		}
+		
+	}
+	
 });
 
