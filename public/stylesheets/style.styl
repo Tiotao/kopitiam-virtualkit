@@ -62,9 +62,22 @@ p.sub
 			
 	border: none
 	
-	
+
 .navbar-brand, .navbar-nav>li>a
 	text-shadow: none
+
+.navbar-nav>li>.dropdown-menu
+	border: none;
+	text-align: right;
+	box-shadow: none;
+	background: rgba(255, 255, 255, 0.8);
+
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover
+		background: rgba(255, 255, 255, 0.8);
+	
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover
+	background: rgba(255, 255, 255, 0.8);
+	box-shadow: none;
 	
 #exhibition-name, #kanji-name
 	
@@ -435,7 +448,7 @@ h4.section-header
 		-o-transition: all 0.5s;
 		padding: 1.2em
 		color: white
-		border-radius: 5%
+		border-radius: 6%
 		
 		b span
 			letter-spacing: 0.1em
