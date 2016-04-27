@@ -1,0 +1,112 @@
+extends layout
+
+block content
+	.container-fluid.page-header
+		.animation-header#circle
+		.row
+			.col-md-12.text-center#exhibition-name
+				h1 艺树
+					span 人
+				p ARTIVATOR
+					span S
+
+
+	.container
+		.section#landing-content
+			.row
+				.col-md-offset-3.col-md-6
+
+					h4.section-header.text-center 成员介绍
+
+				.col-md-offset-2.col-md-8
+					#member-container
+						.member.member-anj
+							.banner
+								b 张思敏
+									br
+									span Angelina Teo Shimin 
+								p 因为有了剧场我成长许多。 希望能够继续在剧场里成长，学习。
+
+						.member.member-cf
+							.banner
+								b 彭彩鳳
+									br
+									span Pang Caifeng 
+								p 在有限的时间与空间里，感受无限的人生。
+						.member.member-chloe
+							.banner
+								b 林礼颖
+									br
+									span Chloe Lin 
+								p 戏剧对我来说是一个重新发现、审视、反省社会课题和自我的一个过程。它不仅让我和他人对话，还让我自省，让我成为一个更加人性化的人。
+						.member.member-des
+							.banner
+								b 苏进凯
+									br
+									span Desmond Soh 
+								p 剧场对我而言，是寻找一种人的接触点的过程。这接触点虽然短暂，但因为在体验时所带来的跨越性，所以瞬间转为永恒之点……
+						.member.member-mel
+							.banner
+								b 陈韵儿
+									br
+									span Melody Chan 
+								p 剧场对我而言是——锅。让我认真去体验生活中的酸甜苦辣，然后在其中烹调成肴，盛盘。
+						.member.member-peisi
+							.banner
+								b 张佩思 
+									br
+									span Teo Pei Si 
+								p 剧场是游乐园，让找回内心中的小孩。
+						.member.member-val
+							.banner
+								b 蔡淑娟
+									br
+									span Valerie Chua 
+								p 原来白色也有50度
+						.member.member-weepeng
+							.banner
+								b 卓玮平
+									br
+									span Toh Wee Peng 
+								p 我相信剧场是生活的一面镜子，它带给我的是一个自我发现的过程。借助人物、情节，它让我体会到了人的种种思想与情感。通过反映社会，它让我看到了人与人之间不同的可能性。
+						.member.member-yikai
+							.banner
+								b 莊義楷
+									br
+									span Chng Yi Kai
+								p 剧场对我来说是一种生活方式： 它虽然具有挑战，但它也帮助我‘呼吸’。它虽然扰乱了很多情绪，但它也让我看清很多事物。
+						.member.member-yiwen
+							.banner
+								b 张一闻
+									br
+									span Zhang Yiwen 
+								p 对我而言，剧场是一个公共而又私密的空间。它让我寻找自己，看见自己，重新发现自己。
+						.member.member-yushi
+							.banner
+								b 林宇石
+									br
+									span Lin Yushi 
+								p 剧场让我开拓视野，也让我成长。在剧场遇见了很多新朋友，新想法，新体验和新挑战。对我，比起“爱好”这个定位，可能“生活方式”更合适吧，我还想要更多。
+						.member.member-zhaozi
+							.banner
+								b 明兆紫
+									br
+									span Ming Zhaozi (Zoe) 
+								p 对于从小就读理科的我来说，剧场就如同一个不受死板公式约束的新世界。我能从中解放疲惫不堪的大脑，聆听压抑许久情感，将自主权交给我的心。我喜欢这种返璞归真的感觉。
+
+
+	script(src='/javascripts/circle.js')
+	script.
+		$(function() {
+			var wall = new Freewall("#member-container");
+			wall.reset({
+				animate: true,
+				cellW: 240,
+				cellH: 240,
+				onResize: function() {
+					wall.refresh();
+				}
+			});
+			wall.fitWidth();
+		});
+

@@ -1,8 +1,9 @@
+
 html
 	overflow-x: hidden
 
 body
-	font-family:  Helvatica, Tahoma, Arial, 'cwTeXHei', "Microsoft JhengHei", "Microsoft YaHei", "微软雅黑", sans-serif
+	font-family:  Helvatica, Tahoma, Arial, 'webfont', "Microsoft YaHei", "微软雅黑", sans-serif
 	letter-spacing: 0.2em
 	font-size: 16px
 	overflow-x: hidden
@@ -74,12 +75,12 @@ p.sub
 	
 	
 	h1
-		font-family: BiauKai, KaiTi, STKaiti, Helvatica, Tahoma, Arial, 'cwTeXHei', "Microsoft JhengHei", "Microsoft YaHei", "微软雅黑", sans-serif
+		font-family: BiauKai, KaiTi, STKaiti, Helvatica, Tahoma, Arial, "Microsoft YaHei", "微软雅黑", sans-serif
 		span
 			letter-spacing: 0
 	
 	p
-		font-family: Roboto Light, Helvatica, Tahoma, Arial, 'cwTeXHei', "Microsoft JhengHei", "Microsoft YaHei", "微软雅黑", sans-serif
+		font-family: Roboto Light, Helvatica, Tahoma, Arial, "Microsoft YaHei", "微软雅黑", sans-serif
 		span
 			letter-spacing: 0
 	
@@ -356,7 +357,113 @@ h4.section-header
 		opacity: 1	
 	}
 	100%{ 
-		opacity: 0;
+		opacity: 0
 		-webkit-transform: scale(10,10)
 		transform: scale(10,10)
 	}
+
+#comment-header
+	margin-bottom: 0em
+
+
+.member
+	width: 200px
+	height: 200px
+	cursor: pointer
+	border: 10px solid white;
+	border-radius: 10%;
+	
+	
+	&.member-anj
+		background: url('../images/artivators/anj.jpg');
+		background-size: cover;
+	
+	&.member-cf
+		background: url('../images/artivators/cf.jpg');
+		background-size: cover;
+	
+	&.member-chloe
+		background: url('../images/artivators/chloe.jpg');
+		background-size: cover;
+	
+	&.member-des
+		background: url('../images/artivators/des.jpg');
+		background-size: cover;
+	
+	&.member-mel
+		background: url('../images/artivators/mel.jpg');
+		background-size: cover;
+	
+	&.member-peisi
+		background: url('../images/artivators/peisi.jpg');
+		background-size: cover;
+	
+	&.member-val
+		background: url('../images/artivators/val.jpg');
+		background-size: cover;
+	
+	&.member-weepeng
+		background: url('../images/artivators/weepeng.jpg');
+		background-size: cover;
+	
+	&.member-yikai
+		background: url('../images/artivators/yikai.jpg');
+		background-size: cover;
+	
+	&.member-yiwen
+		background: url('../images/artivators/yiwen.jpg');
+		background-size: cover;
+	
+	&.member-yushi
+		background: url('../images/artivators/yushi.jpg');
+		background-size: cover;
+	
+	&.member-zhaozi
+		background: url('../images/artivators/zhaozi.jpg');
+		background-size: cover;
+	
+	
+	
+	.banner
+		width: 100%
+		height: 100%
+		background: rgba(0, 0, 0, 0.6)
+		opacity: 0
+		transition: all 0.5s;
+		-moz-transition: all 0.5s; /* Firefox 4 */
+		-webkit-transition: all 0.5s; /* Safari 和 Chrome */
+		-o-transition: all 0.5s;
+		padding: 1.2em
+		color: white
+		border-radius: 5%
+		
+		b span
+			letter-spacing: 0.1em
+			font-size: 1em
+			margin-bottom: 1em
+			font-family: Roboto Light, Helvatica, Tahoma, Arial, "Microsoft YaHei", "微软雅黑", sans-serif
+		
+		p
+			text-indent: 0;
+			line-height: 1.2;
+			font-size: 1em;
+			letter-spacing: 0.1em;
+			margin-top: 0.5em;
+			color: white
+			font-size: 0.9em
+		
+	&:hover
+		.banner
+			opacity: 1
+			
+
+
+
+#member-container
+	opacity: 0.7;
+	
+@font-face {
+	font-family: 'webfont';
+	src: url('//at.alicdn.com/t/tbgbjfdo03z3erk9.eot'); /* IE9*/
+	src: url('//at.alicdn.com/t/tbgbjfdo03z3erk9.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/tbgbjfdo03z3erk9.woff') format('woff'), url('//at.alicdn.com/t/tbgbjfdo03z3erk9.ttf') format('truetype'),url('//at.alicdn.com/t/tbgbjfdo03z3erk9.svg#NotoSansHans-DemiLight') format('svg'); 
+}

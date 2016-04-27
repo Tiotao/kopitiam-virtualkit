@@ -23,6 +23,7 @@ function makeCircle() {
 	}, 16000)
 }
 
+makeCircle();
 
 window.setInterval(function(){
 	makeCircle()

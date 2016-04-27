@@ -28,6 +28,8 @@ function makeFlowCharacters(size) {
 	}, 40000)
 }
 
+makeFlowCharacters(40)
+makeFlowCharacters(80)
 
 window.setInterval(function(){
 	makeFlowCharacters(40)
