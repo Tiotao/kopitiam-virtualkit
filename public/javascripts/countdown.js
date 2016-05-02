@@ -37,7 +37,7 @@ function initializeClock(id, endtime) {
 	var timeinterval = setInterval(updateClock, 1000);
 }
 
-var deadline = new Date('May 25 2016 20:00:00 GMT+08:00');
+var deadline = new Date('May 24 2016 20:00:00 GMT+08:00');
 initializeClock('countdown', deadline);
 
 function getRandomInt(min, max) {

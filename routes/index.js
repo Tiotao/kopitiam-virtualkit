@@ -19,8 +19,8 @@ router.get('/comment', function(req, res, next) {
 	res.render('comment', { title: '访客 | 㗝呸店' });
 });
 
-router.get('/artivators', function(req, res, next) {
-	res.render('artivators', { title: '艺树人 | 㗝呸店' });
+router.get('/artivate', function(req, res, next) {
+	res.render('artivate', { title: '艺树人 | 㗝呸店' });
 });
 
 

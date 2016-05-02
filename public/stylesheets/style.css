@@ -2,7 +2,7 @@ html {
   overflow-x: hidden;
 }
 body {
-  font-family: Helvatica, Tahoma, Arial, 'webfont', "Microsoft YaHei", "微软雅黑", sans-serif;
+  font-family: Helvatica, Tahoma, Arial, Hiragino Sans GB, STHeiti Light, "Microsoft YaHei", "微软雅黑", sans-serif;
   letter-spacing: 0.2em;
   font-size: 16px;
   overflow-x: hidden;
@@ -24,15 +24,17 @@ a:hover {
 /* Safari 和 Chrome */
   -o-transition: all 0.5s;
 }
+a.team {
+  text-decoration: underline;
+}
+a.team a:hover {
+  text-decoration: underline;
+}
 img {
   width: 100%;
 }
 .section p {
-  text-indent: 2.5em;
   margin-bottom: 1.5em;
-}
-.section img {
-  margin-bottom: 2em;
 }
 p.sub {
   padding-top: 0.5em;
@@ -41,6 +43,7 @@ p.sub {
   line-height: 1.5em;
   font-size: 0.8em;
   color: #777;
+  text-align: center;
 }
 .page-header {
   padding: 0;
@@ -101,7 +104,7 @@ p.sub {
 }
 #exhibition-name h1,
 #kanji-name h1 {
-  font-family: BiauKai, KaiTi, STKaiti, Helvatica, Tahoma, Arial, "Microsoft YaHei", "微软雅黑", sans-serif;
+  font-family: BiauKai, KaiTi, STKaiti, Helvatica, Tahoma, Arial, Hiragino Sans GB, STHeiti Light, "Microsoft YaHei", "微软雅黑", sans-serif;
 }
 #exhibition-name h1 span,
 #kanji-name h1 span {
@@ -109,7 +112,7 @@ p.sub {
 }
 #exhibition-name p,
 #kanji-name p {
-  font-family: Roboto Light, Helvatica, Tahoma, Arial, "Microsoft YaHei", "微软雅黑", sans-serif;
+  font-family: 'Roboto', Helvatica, Tahoma, Arial, "Microsoft YaHei", "微软雅黑", sans-serif;
 }
 #exhibition-name p span,
 #kanji-name p span {
@@ -180,7 +183,13 @@ h4.section-header {
   letter-spacing: 0.2em;
   font-size: 0.8em;
   color: #ccc;
-  font-family: Roboto Light;
+  font-family: 'Roboto', Helvatica, Tahoma, Arial, Hiragino Sans GB, STHeiti Light, "Microsoft YaHei", "微软雅黑", sans-serif;
+}
+#footer p.copyright a {
+  color: #ccc;
+}
+#footer p.copyright a:hover {
+  color: #333;
 }
 #ocean {
   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #fff), color-stop(0.5, #f3f3f3));
@@ -474,7 +483,7 @@ h4.section-header {
   letter-spacing: 0.1em;
   font-size: 1em;
   margin-bottom: 1em;
-  font-family: Roboto Light, Helvatica, Tahoma, Arial, "Microsoft YaHei", "微软雅黑", sans-serif;
+  font-family: 'Roboto', Helvatica, Tahoma, Arial, Hiragino Sans GB, STHeiti Light, "Microsoft YaHei", "微软雅黑", sans-serif;
 }
 .member .banner p {
   text-indent: 0;
