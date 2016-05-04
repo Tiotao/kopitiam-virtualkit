@@ -17,7 +17,6 @@ function makeFlowCharacters(size) {
 	var character = document.createElement("div");
 	var docFrag = document.createDocumentFragment();
 	character.className += " char-" + size;
-	console.log(initialPosition)
 	character.style.left = initialPosition[0] + "%"
 	character.style.bottom = initialPosition[1] + "px"
 	character.style.backgroundPosition = backgroundPos;

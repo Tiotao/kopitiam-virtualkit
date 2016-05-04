@@ -25,7 +25,6 @@ if (windowWidth < 400) {
 }
 
 $( window ).resize(function(e) {
-	console.log(e)
 	if (windowWidth !== $( window ).width()) {
 		windowWidth = $( window ).width();
 		$(".wave").remove();
