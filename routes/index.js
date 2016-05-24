@@ -16,7 +16,7 @@ router.get('/message', function(req, res, next) {
 });
 
 router.get('/comment', function(req, res, next) {
-	res.render('comment', { title: '访客 | 㗝呸店 - 2030年的展览' });
+	res.render('comment', { title: '留言板 | 㗝呸店 - 2030年的展览' });
 });
 
 router.get('/artivate', function(req, res, next) {
